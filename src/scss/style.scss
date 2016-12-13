@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+
+@import "~compass-mixins/lib/compass/reset";
+@import "~compass-mixins/lib/compass/css3";
+
+
+// Variables and mixins
+@import "variables";
+@import "mixins";
+
+
+// @font-face embeds
+//@import "fonts";
+
+
+// Compass sprites
+//$ui-layout: holizontal;
+//$ui-spacing: 10px;
+//@import "ui/*.png";
+//@include all-ui-sprites;
+
+
+// Classes to @extend
+@import "extends";
+
+
+// Vendors
+//@import "vendors/fontawesome";
+
+
+// Typography
+//@import "type";
+
+
+// Utility classes
+@import "animation"; // CSS3 Keyframe animations
+
+// Structure
+@import "scaffolding";
+
+body{
+  background-color: black;
+
+  .hurano{
+    background: black;
+  }
+}
