@@ -1,0 +1,130 @@
+
+//
+// Scaffolding
+// --------------------------------------------------
+
+html {
+  font-size: 10px;
+  @media (max-width: 1134px){font-size: 9px;}
+  @media (max-width: 1008px){font-size: 8px;}
+  @media (max-width: 882px) {font-size: 7px;}
+  @media (max-width: 756px) {font-size: 6px;}
+  @media (max-width: 640px) {font-size: 5px;}
+  @media (max-width: 480px) {font-size: 4px;}
+}
+
+a, div, img, button{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+a{
+    cursor: pointer;
+	text-decoration: none;
+}
+
+input, textarea, select, button, p, div, img, a{
+    outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+strong, b {
+    font-family: $primaryFontSemibold;
+    font-weight: normal;
+}
+
+hr{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.clear {
+    clear:both;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+button{
+    border: 0;
+    cursor: pointer;
+}
+
+.capitalize{
+	text-transform: capitalize;
+}
+
+.smooth{
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: $primaryFont;
+    -webkit-text-size-adjust: none;
+    position: relative;
+    background-color: #f4f4f4;
+    color: $black;
+}
+
+#overlay{
+    @extend %absolute-center;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: $overlayZ;
+    opacity: 0.8;
+    display: none;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.container{
+    width: calc(100% - 30px);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.main{
+	width: 100%;
+	float: left;
+}
+
+.page{
+	min-height:calc(100vh - 194px - 346px);
+}
+
+.show-mobile{
+    display: none !important;
+}
+
+@include breakpoint(mobile){
+    .show-mobile{
+        display: block !important;
+    }
+    .show-desktop{
+        display: none !important;
+    }
+}

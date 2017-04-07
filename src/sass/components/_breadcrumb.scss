@@ -1,0 +1,23 @@
+
+//
+// Bradcrumb
+// --------------------------------------------------
+
+.breadcrumbs{
+    width: 100%;
+    padding: 19px 0 17px 0;
+    border-bottom: 1px solid #dddddd;
+
+    a, span{
+        color: $titleColor;
+        font-size: 14.62px;
+        line-height: 18px;
+    }
+
+    a{
+        padding-right: 22px;
+        margin-right: 15px;
+        background: transparent url(/images/icons/arrow.svg) right center no-repeat;
+        text-decoration: underline;
+    }
+}

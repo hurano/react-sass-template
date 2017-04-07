@@ -1,0 +1,37 @@
+
+//
+// @extend
+// ------------------------------------
+
+%absolute-center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+%absolute-middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+%absolute-all-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+%popup{
+    @extend %absolute-center;
+    top: 80px;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+

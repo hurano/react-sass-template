@@ -1,0 +1,181 @@
+
+//
+// Header
+// --------------------------------------------------
+
+header{
+
+  background: $headerBg;
+  color: $white;
+
+  .line{
+    background-color: $blue;
+    width: 100%;
+    height: 4px;
+  }
+
+  .upper{
+      clear: both;
+      padding-top: 22px;
+      width: 100%;
+      float:left;
+  }
+
+  .logo{
+      width: 295px;
+      height: 60px;
+      background: transparent url(/images/logo.svg) no-repeat;
+      background-size: 100% auto;
+      float: left;
+      display: block;
+  }
+
+  .nav{
+      float: right;
+      font-size: 14.62px;
+      margin-top: 13px;
+      width: auto;
+
+      a{
+        display: inline-block;
+        float: right;
+      }
+
+      .shipping{
+          margin-top: 10px;
+          padding-left: 30px;
+          background: transparent url(/images/icons/international.svg) no-repeat;
+          background-size: auto 20px;
+          line-height: 20px;
+      }
+
+      .blog{
+          margin-top: 10px;
+          margin-left: 30px;
+          padding-left: 30px;
+          background: transparent url(/images/icons/blog.svg) no-repeat;
+          background-size: auto 20px;
+          line-height: 20px;
+      }
+
+      .login{
+          margin-left: 20px;
+          color: $blue;
+          padding: 0 19px;
+          line-height: 40px;
+          background-color: #26282c;
+          border: #4a4a4a 1px solid;
+          display:inline-block;
+      }
+  }
+
+  .bottom{
+      clear: both;
+      width: 100%;
+      margin-top: 27px;
+      margin-bottom: 30px;
+      float:left;
+  }
+
+  .select{
+      float: left;
+      width: 203px;
+      height: 55px;
+      position: relative;
+      margin: 0;
+      padding: 0;
+
+      &:after{
+          content: '';
+          width: 6px;
+          height: 12px;
+          position: absolute;
+          right: 20px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 10;
+          background: url(/images/icons/arrow.svg) center center no-repeat;
+          background-size: 6px 12px;
+          -ms-transform: rotate(90deg);
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+      }
+  }
+
+  #search{
+      -webkit-appearance: button;
+      -webkit-border-radius: 0;
+      -webkit-box-shadow:none;
+      -webkit-padding-end: 20px;
+      -webkit-padding-start: 2px;
+      -webkit-user-select: none;
+      background-color: #f4f4f4;
+      color: #404040;
+      font-size: 16.71px;
+      line-height: 17px;
+      font-family: $primaryFontSemibold;
+      overflow: hidden;
+      margin: 0;
+      padding: 19px 0 17px 22px;
+      text-overflow: ellipsis;
+      text-transform: uppercase;
+      white-space: nowrap;
+      width: 100%;
+      height: 55px;
+      border: 0;
+      float: left;
+      position: relative;
+
+      border: 1px solid #f4f4f4;
+
+      &.error{
+          border-color: #ff0000;
+      }
+  }
+
+  .searchbox{
+      float: left;
+      border: 0;
+      background-color: $white;
+      padding: 0;
+      padding-left: 25px;
+      width: calc(100% - 203px - 25px - 2px - 55px);
+      height: 53px;
+      font-size: 14.62px;
+      font-family: $secondaryFont;
+      font-style: italic;
+      border-left: $boxBoderColor solid 1px;
+      border-top: $white solid 1px;
+      border-bottom: $white solid 1px;
+      border-right: $white solid 1px;
+
+      &.error{
+          border-color: #ff0000;
+      }
+  }
+
+  #searchButton{
+      display: block;
+      float: left;
+      background: $purple url(/images/icons/search.svg) center center no-repeat;
+      background-size: 28px 28px;
+      width: 55px;
+      height: 55px;
+  }
+
+  .deals{
+      float: left;
+      display: block;
+      height: 55px;
+      width: calc(90% - 35px);
+      padding-left: calc(10% + 35px);
+      background: $orange url(/images/icons/deals.svg) 10% center no-repeat;
+      background-size: 31px auto;
+      font-size: 14.62px;
+      line-height: 55px;
+      font-family: $primaryFontSemibold;
+      text-transform: uppercase;
+  }
+
+}

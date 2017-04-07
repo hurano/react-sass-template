@@ -1,0 +1,36 @@
+//
+// Detail Page
+// --------------------------------------------------
+
+.production, .staging{
+	
+	header{
+		.nav{
+			display: none;
+		}
+		
+		.deals{
+			display: none;
+		}
+		
+		.searchbox{
+			width: calc(100% - 203px - 25px - 55px - 2px);
+		}
+	}
+	
+	.videoReview{
+		display: none !important;
+	}
+	
+	.writeReview{
+		display: none !important;
+	}
+	.priceAlert{
+		display: none !important;
+	}
+	
+	.deals{
+		opacity: 0;
+	}
+}
+
